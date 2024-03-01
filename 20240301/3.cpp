@@ -1,3 +1,9 @@
+/*
+ * 王晨洋 B1243030
+ * ex 3
+ * 20240301
+ */
+
 #include <iostream>
 
 int main() {
@@ -5,8 +11,9 @@ int main() {
     double weight, height;
     std::cout << "Please input your weight (kg): ";
     std::cin >> weight;
-    std::cout << "Please input your height (m): ";
+    std::cout << "Please input your height (cm): ";
     std::cin >> height;
+    height /= 100;
     double bmi = weight / (height * height);
     std::cout << "Your BMI is " << bmi << std::endl;
     if (bmi < 18.5) {

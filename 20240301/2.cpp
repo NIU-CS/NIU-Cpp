@@ -1,3 +1,9 @@
+/*
+ * 王晨洋 B1243030
+ * ex 2
+ * 20240301
+ */
+
 #include <iostream>
 
 int main() {
