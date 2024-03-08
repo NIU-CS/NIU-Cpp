@@ -6,8 +6,10 @@
 
 #include <iostream>
 #include <vector>
+#include <iomanip>
 
 int main() {
+    std::setprecision(1);
     double min=100, max=0;
     std::vector<double> score;
     while (true) {

@@ -8,7 +8,6 @@
 #include <iomanip>
 
 int main() {
-    std::setprecision(2);
     int n;
     double p, r;
     std::cout << "Enter p, r, n: \n";
@@ -16,7 +15,7 @@ int main() {
     std::cout << "year\t" << "Amount\t" << std::endl;
     for (int i=0; i<n; i++) {
         p *= (1+r);
-        std::cout << i+1 << "\t" << p << "\t" << std::endl;
+        std::cout << std::fixed << std::setprecision(2) << i+1 << "\t" << p << "\t" << std::endl;
     }
 
     return 0;
