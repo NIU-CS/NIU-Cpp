@@ -5,6 +5,7 @@
  */
 
 #include <iostream>
+#include <bitset>
 
 int main() {
     int n;
@@ -18,7 +19,7 @@ int main() {
         }
     }
 
-    int binary[8] = {0};
+    std::bitset<8> binary(n);
     for (int i=0; i<8; i++) {
         binary[i] = n % 2;
         n /= 2;
