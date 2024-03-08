@@ -9,25 +9,21 @@
 #include <iomanip>
 
 int main() {
-    std::setprecision(1);
-    double min=100, max=0;
-    std::vector<double> score;
+    int min=100, max=0;
+    int sum = 0, n = 0;
     while (true) {
-        double s;
+        int s;
         std::cout << "Score: ";
         std::cin >> s;
         if (s == -1) break;
         if (s < min) min = s;
         if (s > max) max = s;
-        score.push_back(s);
+        sum += s;
+        n++;
     }
 
-    int sum = 0;
-    for (int i=0; i<score.size(); i++) {
-        sum += score[i];
-    }
-
-    std::cout << "Average: " << sum / score.size() << std::endl;
+    double average = (double)sum / n;
+    std::cout << std::fixed << std::setprecision(1) << "Average: " << average << std::endl;
     std::cout << "Max: " << max << std::endl;
     std::cout << "Min: " << min << std::endl;
     return 0;
