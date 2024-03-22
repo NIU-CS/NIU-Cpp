@@ -1,9 +1,3 @@
-/*
- * 王晨洋 B1243030
- * ex 4
- * 20240308
- */
-
 #include <iostream>
 #include <vector>
 #include <iomanip>
