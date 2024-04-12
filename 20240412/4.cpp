@@ -1,19 +1,23 @@
 #include <iostream>
+#include <random>
+#include <algorithm>
+#include <set>
 
 int main() {
     int guess_count = 0;
-    int n;
-    while (1) {
-        std::cout << "Right answer: ";
-        std::cin >> n;
-        if (n >= 1234 && n <= 9876) {
-            int a = n / 1000;
-            int b = n / 100 % 10;
-            int c = n / 10 % 10;
-            int d = n % 10;
-            if (a != b && a != c && a != d && b != c && b != d && c != d) break;
-        }
+    std::random_device rd;
+    std::mt19937 gen(rd());
+    std::string digits = "0123456789";
+    std::shuffle(digits.begin(), digits.end(), gen);
+
+    int n = std::stoi(digits.substr(0, 4));
+
+    while (n < 1234 || n > 9876) {
+        std::shuffle(digits.begin(), digits.end(), gen);
+        n = std::stoi(digits.substr(0, 4));
     }
+
+    std::cout << "Right answer: " << n << std::endl;
 
     int guess;
     // 0A0B ~ 4A0B
