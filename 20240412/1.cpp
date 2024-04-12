@@ -1,10 +1,10 @@
 #include <iostream>
 #include <random>
 
-void count(int[]) {
+void count(int arr[]) {
     int odd = 0, even = 0;
     for (int i = 0; i < 10; i++) {
-        if (i % 2 == 0) {
+        if (arr[i] % 2 == 0) {
             even++;
         } else {
             odd++;
