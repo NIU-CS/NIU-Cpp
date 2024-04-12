@@ -4,7 +4,7 @@
 int main() {
     std::cout << "Input a string: ";
     std::string str;
-    std::cin >> str;
+    std::getline(std::cin, str);
     std::cout << "Offset: ";
     int offset;
     std::cin >> offset;
