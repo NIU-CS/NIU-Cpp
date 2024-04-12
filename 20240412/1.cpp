@@ -24,10 +24,10 @@ int main() {
     std::cout << "Random: " << std::endl;
     std::random_device rd;
     std::mt19937 gen(rd());
-    for (int i = 1; i <= 10; i++) {
+    for (int i = 0; i < 10; i++) {
         arr[i] = gen() % (n + 1);
         std::cout << arr[i] << "\t";
-        if (i % 5 == 0) std::cout << std::endl;
+        if ((i+1) % 5 == 0) std::cout << std::endl;
     }
 
     count(arr);
