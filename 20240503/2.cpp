@@ -1,8 +1,3 @@
-/*
- b1243030 王晨洋
- Week10_exercise_2
- date:113/5/3
- */
 #include <iostream>
 #include <cstdlib>
 #include <ctime>

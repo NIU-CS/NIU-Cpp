@@ -1,8 +1,3 @@
-/*
- b1243030 王晨洋
- Week10_exercise_3
- date:113/5/3
- */
 #include <iostream>
 
 double add(double a, double b) { return a + b; }
