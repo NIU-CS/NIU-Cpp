@@ -1,5 +1,5 @@
-#include <iostream>
 #include <iomanip>
+#include <iostream>
 
 #define PI 3.1415926
 
@@ -14,7 +14,9 @@ int main() {
             break;
         }
 
-        std::cout << std::fixed << std::setprecision(3) << "Volumn = " << VOLUMN(4.0 / 3.0, PI, r * r * r) << std::endl;
+        std::cout << std::fixed << std::setprecision(3)
+                  << "Volumn = " << VOLUMN(4.0 / 3.0, PI, r * r * r)
+                  << std::endl;
     }
 
     return 0;

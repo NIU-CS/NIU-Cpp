@@ -1,5 +1,5 @@
-#include <iostream>
 #include <iomanip>
+#include <iostream>
 
 double bounce_height(double height) {
     if (height < 1) return 0;
@@ -13,7 +13,8 @@ int main() {
         std::cin >> n;
         if (n <= 0) break;
 
-        std::cout << std::fixed << std::setprecision(2) << "Output: " << bounce_height(n) << std::endl;
+        std::cout << std::fixed << std::setprecision(2)
+                  << "Output: " << bounce_height(n) << std::endl;
     }
 
     return 0;

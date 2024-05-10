@@ -27,7 +27,7 @@ int main() {
     for (int i = 0; i < 10; i++) {
         ptr[i] = gen() % (n + 1);
         std::cout << ptr[i] << "\t";
-        if ((i+1) % 5 == 0) std::cout << std::endl;
+        if ((i + 1) % 5 == 0) std::cout << std::endl;
     }
 
     count(ptr);

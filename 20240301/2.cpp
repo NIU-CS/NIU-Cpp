@@ -9,12 +9,15 @@ int main() {
         double celsius;
         std::cout << "Please input the temperature in Celsius: ";
         std::cin >> celsius;
-        std::cout << celsius << " degrees Celsius is " << celsius * 9 / 5 + 32 << " degrees Fahrenheit." << std::endl;
+        std::cout << celsius << " degrees Celsius is " << celsius * 9 / 5 + 32
+                  << " degrees Fahrenheit." << std::endl;
     } else if (choice == 2) {
         double fahrenheit;
         std::cout << "Please input the temperature in Fahrenheit: ";
         std::cin >> fahrenheit;
-        std::cout << fahrenheit << " degrees Fahrenheit is " << (fahrenheit - 32) * 5 / 9 << " degrees Celsius." << std::endl;
+        std::cout << fahrenheit << " degrees Fahrenheit is "
+                  << (fahrenheit - 32) * 5 / 9 << " degrees Celsius."
+                  << std::endl;
     } else {
         std::cout << "Invalid choice." << std::endl;
     }

@@ -1,12 +1,10 @@
 #include <iostream>
 
 bool is_prime(int n) {
-    if (n <= 1)
-        return false;
+    if (n <= 1) return false;
 
     for (int i = 2; i <= n / 2; i++)
-        if (n % i == 0)
-            return false;
+        if (n % i == 0) return false;
 
     return true;
 }
@@ -14,7 +12,7 @@ bool is_prime(int n) {
 int n_prime(int x, int y) {
     int ans = 0;
     if (x > y) std::swap(x, y);
-    for (int i=x; i<=y; i++) {
+    for (int i = x; i <= y; i++) {
         if (is_prime(i)) ans++;
     }
 

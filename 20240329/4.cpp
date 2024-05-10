@@ -1,5 +1,5 @@
-#include <iostream>
 #include <iomanip>
+#include <iostream>
 
 #include "head_math.h"
 
@@ -18,22 +18,28 @@ int main() {
             case 1:
                 std::cout << "Base, Height: ";
                 std::cin >> b >> h;
-                std::cout << std::fixed << std::setprecision(2) << "Area of Para = " << PARA(b, h) << std::endl;
+                std::cout << std::fixed << std::setprecision(2)
+                          << "Area of Para = " << PARA(b, h) << std::endl;
                 break;
             case 2:
                 std::cout << "Upper, Base, Height: ";
                 std::cin >> ub >> lb >> h;
-                std::cout << std::fixed << std::setprecision(2) << "Area of Trapezoid = " << TRAPEZOID(ub, lb, h) << std::endl;
+                std::cout << std::fixed << std::setprecision(2)
+                          << "Area of Trapezoid = " << TRAPEZOID(ub, lb, h)
+                          << std::endl;
                 break;
             case 3:
                 std::cout << "Radius: ";
                 std::cin >> r;
-                std::cout << std::fixed << std::setprecision(2) << "Perimeter of Circle = " << PERIPHERY(r) << std::endl;
+                std::cout << std::fixed << std::setprecision(2)
+                          << "Perimeter of Circle = " << PERIPHERY(r)
+                          << std::endl;
                 break;
             case 4:
                 std::cout << "Radius: ";
                 std::cin >> r;
-                std::cout << std::fixed << std::setprecision(2) << "Volume = " << VOLUME(r) << std::endl;
+                std::cout << std::fixed << std::setprecision(2)
+                          << "Volume = " << VOLUME(r) << std::endl;
                 break;
             case 5:
                 return 0;

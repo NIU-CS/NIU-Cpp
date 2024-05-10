@@ -2,7 +2,8 @@
 
 int cat_height(int height) {
     if (height < 1) return 0;
-    return height + cat_height(height / 2) + cat_height(height / 3) + cat_height(height / 4);
+    return height + cat_height(height / 2) + cat_height(height / 3) +
+           cat_height(height / 4);
 }
 
 int main() {

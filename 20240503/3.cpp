@@ -27,6 +27,7 @@ int main() {
 
         std::cout << a;
         double result = operations[choice - 1](a, b);
-        std::cout << symbols[choice - 1] << b << " = " << result << std::endl << std::endl;
+        std::cout << symbols[choice - 1] << b << " = " << result << std::endl
+                  << std::endl;
     }
 }

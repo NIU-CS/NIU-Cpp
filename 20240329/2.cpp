@@ -1,12 +1,8 @@
 #include <iostream>
 
-double area(double height) {
-    return height * height;
-}
+double area(double height) { return height * height; }
 
-double area(double height, double weight) {
-    return height * weight;
-}
+double area(double height, double weight) { return height * weight; }
 
 int main() {
     while (true) {

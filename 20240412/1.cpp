@@ -27,7 +27,7 @@ int main() {
     for (int i = 0; i < 10; i++) {
         arr[i] = gen() % (n + 1);
         std::cout << arr[i] << "\t";
-        if ((i+1) % 5 == 0) std::cout << std::endl;
+        if ((i + 1) % 5 == 0) std::cout << std::endl;
     }
 
     count(arr);

@@ -1,6 +1,6 @@
+#include <algorithm>
 #include <iostream>
 #include <random>
-#include <algorithm>
 #include <set>
 
 int main() {
@@ -43,7 +43,8 @@ int main() {
                 guess_count++;
                 if (A == 4) break;
             }
-        } else continue;
+        } else
+            continue;
     }
 
     std::cout << "Correct! Total count = " << guess_count << std::endl;

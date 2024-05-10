@@ -1,12 +1,12 @@
-#include <iostream>
 #include <iomanip>
+#include <iostream>
 
 double mypower(double x, double n) {
     double result = 0;
     double reg;
-    for (int i=1; i<=n; i++) {
+    for (int i = 1; i <= n; i++) {
         reg = 1;
-        for (int j=1; j<=i; j++) {
+        for (int j = 1; j <= i; j++) {
             reg *= x;
         }
 
