@@ -32,7 +32,7 @@ int main() {
     }
 
     for (int i=0; i<3; i++) {
-        std::cout << students[i].id << "\t" << students[i].name << "\t";
+        std::cout << students[i].id << "\t" << students[i].name << std::setw(15) <<"\t";
         for (int j=0; j<3; j++) {
             std::cout << students[i].score[j] << "\t";
         }
