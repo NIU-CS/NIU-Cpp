@@ -6,16 +6,16 @@ struct my_time {
     double second;
 };
 
-my_time minus(my_time t1, my_time t2) {
+my_time mius(my_time t[2]) {
     my_time duration;
 
-    if (t1.hour < t2.hour || (t1.hour == t2.hour && t1.minute < t2.minute) || (t1.hour == t2.hour && t1.minute == t2.minute && t1.second < t2.second)) {
-        std::swap(t1, t2);
+    if (t[0].hour < t[1].hour || (t[0].hour == t[1].hour && t[0].minute < t[1].minute) || (t[0].hour == t[1].hour && t[0].minute == t[1].minute && t[0].second < t[1].second)) {
+        std::swap(t[0], t[1]);
     }
 
-    duration.hour = t1.hour - t2.hour;
-    duration.minute = t1.minute - t2.minute;
-    duration.second = t1.second - t2.second;
+    duration.hour = t[0].hour - t[1].hour;
+    duration.minute = t[0].minute - t[1].minute;
+    duration.second = t[0].second - t[1].second;
     if (duration.second < 0) {
         duration.second += 60;
         duration.minute--;
@@ -36,7 +36,7 @@ int main() {
         std::cin >> t[i].hour >> t[i].minute >> t[i].second;
     }
 
-    my_time duration = minus(t[0], t[1]);
+    my_time duration = mius(t);
 
     if (t[0].hour < 10) {
         std::cout << "0";
