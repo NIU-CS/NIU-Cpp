@@ -8,7 +8,8 @@ struct day {
 };
 
 int main() {
-    std::vector<int> valid_days = {0, 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30};
+    std::vector<int> valid_days = {0,  31, 29, 31, 30, 31,
+                                   30, 31, 31, 30, 31, 30};
 
     day d;
     while (1) {
@@ -18,7 +19,8 @@ int main() {
         std::cin >> d.month;
         std::cout << "Day: ";
         std::cin >> d.day;
-        if (d.year < 0 || d.month < 0 || d.month > 12 || d.day < 0 || d.day > valid_days[d.month]) {
+        if (d.year < 0 || d.month < 0 || d.month > 12 || d.day < 0 ||
+            d.day > valid_days[d.month]) {
             std::cout << "Input Error!!" << std::endl;
             break;
         }

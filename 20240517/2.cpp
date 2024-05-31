@@ -1,6 +1,6 @@
-#include <iostream>
 #include <filesystem>
 #include <fstream>
+#include <iostream>
 
 int main() {
     int a = 0;
@@ -26,6 +26,7 @@ int main() {
 
     fin.close();
     std::cout << "Total English: " << num_eng << std::endl;
-    std::cout << "a: " << a << " e: " << e << " i: " << i << " o: " << o << " u: " << u << std::endl;
+    std::cout << "a: " << a << " e: " << e << " i: " << i << " o: " << o
+              << " u: " << u << std::endl;
     return 0;
 }

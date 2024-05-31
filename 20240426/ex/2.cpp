@@ -1,7 +1,7 @@
-#include <iostream>
 #include <cstdlib>
+#include <iostream>
 
-int* myMax(int *a, int *b) {
+int *myMax(int *a, int *b) {
     if (*a > *b) {
         return a;
     } else {

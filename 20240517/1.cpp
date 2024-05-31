@@ -1,7 +1,7 @@
-#include <iostream>
 #include <fstream>
-#include <random>
 #include <iomanip>
+#include <iostream>
+#include <random>
 
 int main() {
     std::cout << "N: ";
@@ -13,7 +13,7 @@ int main() {
     std::mt19937 gen(rd());
     std::cout << "Random:" << std::endl;
     double sum = 0;
-    for (int i=0; i<50; i++) {
+    for (int i = 0; i < 50; i++) {
         int x = (gen() % n) + 1;
         fout << x << std::endl;
         std::cout << x << "\t";
@@ -22,6 +22,7 @@ int main() {
     }
     fout.close();
     sum /= 50;
-    std::cout << std::fixed << std::setprecision(1) << "average: " << sum << std::endl;
+    std::cout << std::fixed << std::setprecision(1) << "average: " << sum
+              << std::endl;
     return 0;
 }
